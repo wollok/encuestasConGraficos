@@ -1,0 +1,9 @@
+import grafico.*
+
+describe "group of tests for grafico" {
+
+  test "valoracion promedio" {
+    //assert.equals(100, pepita.energy())
+  }
+
+}

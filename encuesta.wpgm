@@ -1,0 +1,19 @@
+import grafico.*
+import grupo1.*
+import grupo2.*
+import opiniones.*
+
+program graficadorEncuestas {
+	const encuesta = new Encuesta()
+	encuesta.opiniones().add(grupo1)
+	encuesta.opiniones().add(grupo2)
+
+	game.boardGround("fondoClaro.jpg")
+	game.height(14)
+	game.width(16)	new GraficoBarrasIconos(
+		valores = encuesta.resultados(),
+		etiquetas = encuesta.descripciones(),
+		position = game.at(3, 3)
+	).dibujar()
+	game.start()
+}
