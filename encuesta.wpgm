@@ -1,13 +1,30 @@
 import grafico.*
-import grupo1.*
-import grupo2.*
+import grupos.*
 import opiniones.*
 
 program graficadorEncuestas {
 	const encuesta = new Encuesta()
+/*	encuesta.opiniones().add(grupoN)
+	encuesta.opiniones().add(grupoNN)
+*/
+
 	encuesta.opiniones().add(grupo1)
 	encuesta.opiniones().add(grupo2)
+	encuesta.opiniones().add(grupo3)
+	encuesta.opiniones().add(grupo4)
+	encuesta.opiniones().add(grupo5)
+	encuesta.opiniones().add(grupo6)
+/*
+	encuesta.opiniones().add(grupo7)
+	encuesta.opiniones().add(grupo8)
+	encuesta.opiniones().add(grupo9)
+	encuesta.opiniones().add(grupo10)
+	encuesta.opiniones().add(grupo11)
 
+	encuesta.opiniones().add(grupo12)
+	encuesta.opiniones().add(grupo13)
+	encuesta.opiniones().add(grupo14)
+*/
 	game.boardGround("fondoClaro.jpg")
 	game.height(14)
 	game.width(16)	new GraficoBarrasIconos(
